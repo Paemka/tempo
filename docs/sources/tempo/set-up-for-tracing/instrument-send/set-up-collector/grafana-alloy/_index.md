@@ -82,7 +82,7 @@ otelcol.receiver.otlp "default" {
 
 otelcol.exporter.otlp "default" {
   client {
-    endpoint = env("TEMPO_ENDPOINT")
+    endpoint = sys.env("TEMPO_ENDPOINT")
   }
 }
 ```
@@ -141,7 +141,7 @@ otelcol.processor.k8sattributes "default" {
 
 otelcol.exporter.otlp "default" {
   client {
-    endpoint = env("OTLP_ENDPOINT")
+    endpoint = sys.env("OTLP_ENDPOINT")
   }
 }
 ```
