@@ -119,7 +119,7 @@ otelcol.connector.servicegraph "default" {
 
 otelcol.exporter.otlp "default" {
   client {
-    endpoint = env("OTLP_ENDPOINT")
+    endpoint = sys.env("OTLP_ENDPOINT")
   }
 }
 ```
